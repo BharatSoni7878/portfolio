@@ -22,6 +22,10 @@ body {
   color: #fff;
 }
 
+.navbar hr {
+  display: none;
+}
+
 .nav-links {
   list-style: none;
   display: flex;
@@ -74,12 +78,16 @@ body {
 }
 
 /* About Section */
-.about, .projects, .footer {
+.about,
+.projects,
+.footer {
   padding: 60px 80px;
   text-align: center;
 }
 
-.about h2, .projects h2, .footer h2 {
+.about h2,
+.projects h2,
+.footer h2 {
   margin-bottom: 20px;
   color: #00adb5;
 }
@@ -95,7 +103,7 @@ body {
 .project-card {
   background: #fff;
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   padding: 20px;
   transition: transform 0.3s;
 }
@@ -114,4 +122,34 @@ body {
 .footer a {
   color: #00adb5;
   text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .navbar hr {
+    display: block;
+    width: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.582);
+    color: white;
+  }
+
+  .navbar ul {
+    margin-top: 15px;
+  }
+
+  .nav-links {
+    gap: 50px;
+  }
+
+  .hero {
+    height: 85vh;
+  }
+
+  .hero .hero-content {
+    padding: 0 20px;
+  }
 }
