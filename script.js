@@ -49,10 +49,4 @@ const revealObserver = new IntersectionObserver(
 
 reveals.forEach((el) => revealObserver.observe(el));
 
-contactForm.addEventListener("submit", (e) => {
-    e.preventDefault();
-    const data = new FormData(contactForm);
-    const name = data.get("name");
-    alert(`Thanks, ${name}! Connect this form to a service to send messages for real.`);
-    contactForm.reset();
-});
+
