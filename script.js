@@ -49,4 +49,30 @@ const revealObserver = new IntersectionObserver(
 
 reveals.forEach((el) => revealObserver.observe(el));
 
+// Progress Bar & Scroll to Top Button
+const progressBar = document.getElementById("progressBar");
+const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+window.addEventListener("scroll", () => {
+    // Calculate scroll progress
+    const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const scrollProgress = scrollHeight > 0 ? (window.scrollY / scrollHeight) * 100 : 0;
+    progressBar.style.width = scrollProgress + "%";
+
+    // Show/hide scroll to top button
+    if (window.scrollY > 300) {
+        scrollToTopBtn.classList.add("visible");
+    } else {
+        scrollToTopBtn.classList.remove("visible");
+    }
+});
+
+// Scroll to top functionality
+scrollToTopBtn.addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});
+
 
