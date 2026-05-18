@@ -2,69 +2,445 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Bharat Soni — Front-end developer portfolio. Projects, skills, and contact." />
+    <title>Bharat Soni | Front-end Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Syne:wght@600;700;800&display=swap"
+        rel="stylesheet" />
+   <link rel="stylesheet" href="./style.css" />
 </head>
 
 <body>
-  <header>
-    <nav class="navbar">
-      <h1 class="logo">MyPortfolio</h1>
-      <hr>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+        <nav class="navbar" id="navbar">
+            <div class="nav-inner">
+                <a href="#hero" class="logo">BharatSoni<span>.</span></a>
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact" class="nav-cta">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
-  <section id="hero" class="hero">
-    <div class="hero-content">
-      <h2>Hello, I'm <span>Bharat</span></h2>
-      <p>A web developer who loves building beautiful, responsive websites.</p>
-      <a href="#projects" class="btn">View My Work</a>
-    </div>
-  </section>
+    <main>
+        <!-- Hero -->
+        <section id="hero" class="hero">
+            <div class="container hero-grid">
+                <div class="reveal">
+                    <div class="hero-badge">
+                        <span class="dot"></span>
+                        Available for internships & entry-level roles
+                    </div>
+                    <h1>Hello, I'm <span class="highlight">Bharat Soni</span></h1>
+                    <p class="hero-sub">
+                        BCA graduate and front-end developer crafting responsive, accessible websites with clean code
+                        and thoughtful design. I turn ideas into polished digital experiences through hands-on projects.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                    <div class="hero-social">
+                        <a href="https://github.com/BharatSoni7878" target="_blank" rel="noopener noreferrer"
+                            title="GitHub">GH</a>
+                        <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer"
+                            title="LinkedIn">in</a>
+                        <a href="mailto:bhratsoni.bs9211@gmail.com" title="Email">@</a>
+                    </div>
+                </div>
+                <aside class="hero-card reveal">
+                    <div class="avatar" aria-hidden="true"><img
+                            src="https://avatars.githubusercontent.com/u/205933723?v=4" alt="Bharat Soni" width="120"
+                            height="120"></div>
+                    <h3>Bharat Soni</h3>
+                    <p class="role">BCA Graduate · Front-end Developer</p>
+                    <div class="hero-stats">
+                        <div class="hero-stat">
+                            <strong>5+</strong>
+                            <span>Projects</span>
+                        </div>
+                        <div class="hero-stat">
+                            <strong>BCA</strong>
+                            <span>Degree</span>
+                        </div>
+                        <div class="hero-stat">
+                            <strong>AI</strong>
+                            <span>Certified</span>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </section>
 
-  <section id="about" class="about">
-    <h2>About Me</h2>
-    <p>
-      I'm a passionate front-end developer with a focus on creating user-friendly and visually appealing designs. I
-      enjoy learning new technologies and improving my craft.
-    </p>
-  </section>
+        <!-- About -->
+        <section id="about" class="section">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="reveal">
+                        <p class="section-label">About Me</p>
+                        <h2 class="section-title">Building interfaces people enjoy using</h2>
+                        <div class="about-text">
+                            <p>
+                                I'm a BCA graduate from Jagannath University, Jaipur, focused on creating user-friendly,
+                                visually appealing websites. I enjoy turning complex problems into simple, elegant
+                                solutions through practical projects.
+                            </p>
+                            <p>
+                                When I'm not coding, I'm exploring new frameworks, building side projects, or expanding
+                                my skills — from web development to artificial intelligence fundamentals.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="info-cards reveal">
+                        <div class="info-card">
+                            <div class="info-icon">📍</div>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Indore, Madhya Pradesh, India</p>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <div class="info-icon">🎓</div>
+                            <div>
+                                <h4>Education</h4>
+                                <p>BCA — Jagannath University, Jaipur</p>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <div class="info-icon">💼</div>
+                            <div>
+                                <h4>Status</h4>
+                                <p>BCA Graduate · Open to opportunities</p>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <div class="info-icon">🏆</div>
+                            <div>
+                                <h4>Highlight</h4>
+                                <p>Dev Summit 2.0 Hackathon participant</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-  <section id="projects" class="projects">
-    <h2>Projects</h2>
-    <div class="project-grid">
-      <div class="project-card">
-        <h3>Portfolio Website</h3>
-        <p>A modern responsive portfolio built with HTML, CSS, and JavaScript.</p>
-      </div>
-      <div class="project-card">
-        <h3>Blog Template</h3>
-        <p>A minimalist blog layout designed for readability and speed.</p>
-      </div>
-      <div class="project-card">
-        <h3>Landing Page</h3>
-        <p>A clean, professional landing page for a product or service.</p>
-      </div>
-    </div>
-  </section>
+        <!-- Skills -->
+        <section id="skills" class="section skills">
+            <div class="container">
+                <div class="section-header center reveal">
+                    <p class="section-label">Skills</p>
+                    <h2 class="section-title">Tools & technologies I work with</h2>
+                    <p class="section-desc">A snapshot of my current stack — update these groups as your skills grow.
+                    </p>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-group reveal">
+                        <h3>⚡ Front-end</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">HTML5</span>
+                            <span class="skill-tag">CSS3</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Tailwind CSS</span>
+                            <span class="skill-tag">Responsive Design</span>
+                        </div>
+                    </div>
+                    <div class="skill-group reveal">
+                        <h3>🛠 Tools</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Git & GitHub</span>
+                            <span class="skill-tag">VS Code</span>
+                            <span class="skill-tag">Figma</span>
+                            <span class="skill-tag">Chrome DevTools</span>
+                            <span class="skill-tag">npm</span>
+                        </div>
+                    </div>
+                    <div class="skill-group reveal">
+                        <h3>🚀 Extras</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">REST APIs</span>
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">Express</span>
+                            <span class="skill-tag">localStorage</span>
+                            <span class="skill-tag">SEO Basics</span>
+                            <span class="skill-tag">Performance</span>
+                            <span class="skill-tag">Artificial Intelligence</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-  <section id="projects" class="projects">
-    <h2>Contact Me</h2>
-    <p>Email: <a href="mailto:bhratsoni.bs9211@gmail.com">bhratsoni.bs9211@gmail.com</a></p>
-    <p>Phone: <a href="tel:+91787-849-3235">Click here to call</a></p>
-  </section>
+        <!-- Education -->
+        <section id="education" class="section">
+            <div class="container">
+                <div class="section-header center reveal">
+                    <p class="section-label">Education</p>
+                    <h2 class="section-title">My journey so far</h2>
+                    <p class="section-desc">Academic background, certified learning, and hands-on participation in
+                        tech events.</p>
+                </div>
+                <div class="timeline">
+                    <article class="timeline-item reveal">
+                        <p class="timeline-date">Education</p>
+                        <h3>Bachelor of Computer Applications (BCA)</h3>
+                        <p class="company">Jagannath University, Jaipur</p>
+                        <p>Completed my undergraduate degree in computer applications, building a strong foundation in
+                            programming, web technologies, and software development.</p>
+                    </article>
+                    <article class="timeline-item reveal">
+                        <p class="timeline-date">Certification</p>
+                        <h3>Introduction to Artificial Intelligence</h3>
+                        <p class="company">Certificate Internship</p>
+                        <p>Completed a certified internship covering AI fundamentals — including core concepts,
+                            real-world applications, and introductory machine learning workflows.</p>
+                    </article>
+                    <article class="timeline-item reveal">
+                        <p class="timeline-date">Hackathon</p>
+                        <h3>Dev Summit 2.0</h3>
+                        <p class="company">Hackathon Participant</p>
+                        <p>Participated in Dev Summit 2.0, collaborating under time constraints to build and present
+                            tech solutions alongside fellow developers and innovators.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-  <footer id="contact" class="footer">
+        <!-- Projects -->
+        <section id="projects" class="section">
+            <div class="container">
+                <div class="section-header center reveal">
+                    <p class="section-label">Projects</p>
+                    <h2 class="section-title">Selected work</h2>
+                    <p class="section-desc">Hands-on builds spanning client-side apps, REST APIs, and full-stack
+                        projects — from dynamic UIs to file-based backends.</p>
+                </div>
+                <div class="project-grid">
+                    <article class="project-card reveal">
+                        <div class="project-thumb" aria-hidden="true">🛒</div>
+                        <div class="project-body">
+                            <h3>Dynamic E-Commerce Storefront</h3>
+                            <p>A data-driven shopping app that uses vanilla JavaScript and the fetch() API to inject
+                                product details from a local JSON file into the DOM — with full client-side cart
+                                management, live filtering, and localStorage caching, all without page reloads.</p>
+                            <div class="project-tags">
+                                <span>JavaScript</span>
+                                <span>Fetch API</span>
+                                <span>localStorage</span>
+                                <span>CSS</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/BharatSoni7878/ecom-storefront" target="_blank"
+                                    rel="noopener noreferrer">Source Code →</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="project-card reveal">
+                        <div class="project-thumb" aria-hidden="true">💰</div>
+                        <div class="project-body">
+                            <h3>Personal Finance & Expense Tracker</h3>
+                            <p>An interactive financial ledger focused on logic and array manipulation. Users log daily
+                                transactions through an ingestion form while the engine instantly updates balances,
+                                filters categories dynamically, and persists state locally.</p>
+                            <div class="project-tags">
+                                <span>JavaScript</span>
+                                <span>DOM</span>
+                                <span>Array Methods</span>
+                                <span>localStorage</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/BharatSoni7878" target="_blank"
+                                    rel="noopener noreferrer">Source Code →</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="project-card reveal">
+                        <div class="project-thumb" aria-hidden="true">📚</div>
+                        <div class="project-body">
+                            <h3>Interactive Flashcard Study App</h3>
+                            <p>A digital learning tool built to test retention with interactive UI. JavaScript
+                                state-tracking monitors card array indexes while CSS 3D transforms simulate a physical
+                                flip motion when revealing answers, complete with dynamic progress metrics.</p>
+                            <div class="project-tags">
+                                <span>JavaScript</span>
+                                <span>CSS 3D Transforms</span>
+                                <span>State Management</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/BharatSoni7878" target="_blank"
+                                    rel="noopener noreferrer">Source Code →</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="project-card reveal">
+                        <div class="project-thumb" aria-hidden="true">🍳</div>
+                        <div class="project-body">
+                            <h3>Local File-Based Recipe Book API</h3>
+                            <p>A pure backend RESTful API built with Node.js and Express — no heavy database required.
+                                Handles standard HTTP methods (GET, POST, DELETE) and uses Node's native fs module to
+                                read and write recipe data directly to a disk-based JSON file.</p>
+                            <div class="project-tags">
+                                <span>Node.js</span>
+                                <span>Express</span>
+                                <span>REST API</span>
+                                <span>File System</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/BharatSoni7878" target="_blank"
+                                    rel="noopener noreferrer">Source Code →</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="project-card reveal">
+                        <div class="project-thumb" aria-hidden="true">💬</div>
+                        <div class="project-body">
+                            <h3>Minimalist Shared Message Board</h3>
+                            <p>A foundational full-stack guestbook showcasing the complete client-server data lifecycle.
+                                A simple HTML/JS frontend connects to a Node.js backend via fetch(), processing user
+                                messages, attaching server-side timestamps, and serving a persistent wall sorted
+                                chronologically.</p>
+                            <div class="project-tags">
+                                <span>Node.js</span>
+                                <span>Express</span>
+                                <span>Fetch API</span>
+                                <span>Full-Stack</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/BharatSoni7878" target="_blank"
+                                    rel="noopener noreferrer">Source Code →</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-    <p>&copy; 2025 Bharat Soni. All rights reserved.</p>
-  </footer>
+        <!-- Services -->
+        <section id="services" class="section services">
+            <div class="container">
+                <div class="section-header center reveal">
+                    <p class="section-label">Services</p>
+                    <h2 class="section-title">What I can help you with</h2>
+                    <p class="section-desc">Offerings you can customize for clients or your resume.</p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card reveal">
+                        <div class="service-num">01</div>
+                        <h3>Website Development</h3>
+                        <p>Custom responsive websites from scratch — landing pages, portfolios, and business sites.</p>
+                    </div>
+                    <div class="service-card reveal">
+                        <div class="service-num">02</div>
+                        <h3>UI Implementation</h3>
+                        <p>Turning Figma or wireframe designs into clean, production-ready front-end code.</p>
+                    </div>
+                    <div class="service-card reveal">
+                        <div class="service-num">03</div>
+                        <h3>Site Optimization</h3>
+                        <p>Improving load speed, mobile layout, and accessibility for better user experience.</p>
+                    </div>
+                    <div class="service-card reveal">
+                        <div class="service-num">04</div>
+                        <h3>Maintenance & Updates</h3>
+                        <p>Ongoing content updates, bug fixes, and small feature additions for existing sites.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="section">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="reveal">
+                        <p class="section-label">Contact</p>
+                        <h2 class="section-title">Let's work together</h2>
+                        <p class="section-desc">
+                            Have a project in mind or want to say hello? Reach out — I typically reply within 24 hours.
+                        </p>
+                        <div class="contact-list">
+                            <a href="mailto:bhratsoni.bs9211@gmail.com" class="contact-item">
+                                <div class="icon">✉</div>
+                                <div>
+                                    <strong>Email</strong>
+                                    <span>bhratsoni.bs9211@gmail.com</span>
+                                </div>
+                            </a>
+                            <a href="tel:+917878493235" class="contact-item">
+                                <div class="icon">📞</div>
+                                <div>
+                                    <strong>Phone</strong>
+                                    <span>+91 78784 93235</span>
+                                </div>
+                            </a>
+                            <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer"
+                                class="contact-item">
+                                <div class="icon">in</div>
+                                <div>
+                                    <strong>LinkedIn</strong>
+                                    <span>linkedin.com/in/your-profile</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <form class="contact-form reveal" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" placeholder="Your name" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="you@example.com" required />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="Project inquiry" />
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="Tell me about your project..."
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                        <p class="form-note">Form is front-end only for now — wire it to Formspree, Netlify Forms, or
+                            your backend later.</p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <nav class="footer-links">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+                <a href="https://github.com/BharatSoni7878" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </nav>
+            <p>&copy; 2025 Bharat Soni. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+   
 </body>
 
 </html>
