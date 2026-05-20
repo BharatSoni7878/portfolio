@@ -334,7 +334,7 @@ img {
 
 .hero-sub {
   font-size: 1.15rem;
-  color: var(--text-muted);
+  color:rgb(189, 189, 189);
   max-width: 520px;
   margin-bottom: 2rem;
 }
